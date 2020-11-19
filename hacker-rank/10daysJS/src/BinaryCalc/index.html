@@ -11,10 +11,10 @@
         <div class="calc-body">
             <div class="calc-screen">
                 <div id="input" class="calc-operation"></div>
-                <div id="result" class="calc-typed" onclick="Calculate()"></div>
+                <div id="result" class="calc-typed"></div>
             </div>
             <div class="calc-button-row">
-                <div  class="button  l" onclick="Insert('+')">+</div>
+                <div class="button  l" onclick="Insert('+')">+</div>
                 <div class="button l" onclick="Insert('-')">-</div>
                 <div class="button l" onclick="Insert('*')">X</div>
                 <div class="button l" onclick="Insert('/')">/</div>
@@ -22,14 +22,16 @@
             <div class="calc-button-row">
                 <div id="1" class="button" onclick="Insert(1)">1</div>
                 <div id="0" class="button" onclick="Insert(0)">0</div>
-                <div class="button">=</div>
-                <div class="button c">C</div>
+                <div class="button" onclick="Calculate()">=</div>
+                <div class="button c" onclick="Clear()">C</div>
             </div>
 </body>
 <script type="module">
-    import {Insert,Calculate} from './js/main.js'
+    import { Insert, Calculate, Clear } from './js/main.js'
 
     window.Insert = Insert
     window.Calculate = Calculate
+    window.Clear = Clear
 </script>
+
 </html>

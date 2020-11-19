@@ -10,8 +10,14 @@ export function Insert(val){
 } 
 
 export function Calculate(){
-    let expr = document.getElementById('input').value;
+    let expr = document.getElementById('input').innerHTML;
     let calc = new BinaryCalculator(); 
 
     document.getElementById('result').innerHTML = calc.Calculate(expr);
+} 
+
+export function Clear(){
+    document.getElementById('input').innerHTML = "0";
+    document.getElementById('result').innerHTML = "0";
+    expression="";
 }
