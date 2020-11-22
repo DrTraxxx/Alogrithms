@@ -1,16 +1,14 @@
-﻿using System;
-
-namespace algocourse
-{   
+﻿namespace algocourse
+{
+    using System;
+    using System.Linq;
     using Tasks;
 
     class Program
     {
         static void Main(string[] args)
-        { 
-          var resutl = Recursion.RecursiveArraySum(new int[]{1,2,3,4,5},0);
-          
-          Console.WriteLine(resutl); 
+        {
+        
         }
     }
 }
