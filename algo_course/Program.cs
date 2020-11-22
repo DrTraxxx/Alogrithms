@@ -10,7 +10,7 @@ namespace algocourse
         { 
           var resutl = Recursion.RecursiveArraySum(new int[]{1,2,3,4,5},0);
           
-          Console.WriteLine(resutl);
+          Console.WriteLine(resutl); 
         }
     }
 }
