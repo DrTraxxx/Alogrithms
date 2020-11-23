@@ -16,7 +16,7 @@ namespace Tasks
             Draw(n-1);
 
             Console.WriteLine(new string('#',n));
-
+           
         }
 
     }
